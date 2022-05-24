@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="../styles/index.css" />
+    <link
+      rel="shortcut icon"
+      href="../assets/icono_bover.ico"
+      type="image/x-icon"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@1,200&display=swap"
+      rel="stylesheet"
+    />
+    <title>Camisetas Bover</title>
+  </head>
+  <body>
+    <!--fila del logo y nav-->
+    <div class="gridArea__contacto">
+      <header class="header">
+        <img class="header__logo" src="../assets/bover.png" alt="logo" />
+        <nav class="header__nav">
+          <ul class="header__list">
+            <li class="header__item">
+              <a class="header__anchor" href="../index.html">Home</a>
+            </li>
+            <li class="header__item">
+              <a class="header__anchor" href="./catalogo.html">Catálogo</a>
+            </li>
+            <li class="header__item">
+            <a class="header__anchor" href="./ubicacion.html">Ubicación</a>
+          </li>
+          <li class="header__item">
+            <a class="header__anchor" href="./FAQ.html">FAQ</a>
+          </li>
+          <li class="header__item">
+            <a class="header__anchor" href="./contacto.html">Contacto</a>
+          </li>
+        </ul>
+      </nav>
+      <div class="searchBar">
+        <input
+        class="searchBar__input"
+        type="search"
+        name="shirtSearch"
+        id="shirtSearch"
+        placeholder="¿Que camiseta buscas?"
+        />
+        <button class="searchBar__button">Buscar</button>
+      </header>
+      
+      <!--fin de fila del logo y nav-->
+      <section class="form">
+        <form action="" method="post">
+          <fieldset>
+            <legend>Contactanos</legend>
+            <label for="name">Nombre:</label>
+            <input id="name" type="text" />
+            <br />
+            <label for="surname">Apellido:</label>
+            <input type="text" id="surname" />
+            <br />
+            <label for="eMail">Email:</label>
+            <input type="email" name="email" id="eMail" />
+            <br />
+            <label for="sex">Sexo:</label>
+            <select name="sex" id="sex">
+              <option value="" disabled selected></option>
+              <option value="M">Hombre</option>
+              <option value="W">Mujer</option>
+              <option value="O">Otro</option>
+            </select>
+            <br />
+            <button type="submit">Enviar</button>
+          </fieldset>
+        </form>
+      </section>
+      <!--inicio del footer-->
+      <footer class="footer">
+      <h4>Copyright © 2022 - Camisetas Bover Inc.</h4>
+      <h6>Todos los derechos reservados.</h6>
+      </footer>
+    </div>
+  </body>
+</html>

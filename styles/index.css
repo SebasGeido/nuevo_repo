@@ -1,0 +1,210 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;;    
+}
+.gridArea__index {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "portada"
+        "contenidoPrincipal"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 0.3fr 2fr 2fr 0fr;
+}
+.gridArea__contacto {
+    display: grid;
+    grid-template-areas:
+        "header"
+        "form"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows: 0.3fr 8.45fr 0fr ;
+}
+.header {
+    width: 100%;
+    align-items: center;
+    display: flex;
+    flex-wrap: nowrap;
+    background-color: #143F6B;
+}
+.header__logo {
+    justify-content: center;
+    display: flex;
+    height: 70px;
+    margin-left: 5px;
+    margin-bottom: 2px;
+}
+.header__nav {
+    display: flex;
+}
+.header__list {
+    display: flex;
+}
+.header__item {
+    margin-left: 20%;
+    font-size: 14px;
+    list-style: none;
+    padding: 3%;
+}
+.header__anchor {
+    color: #F55353;
+}
+.header__item:hover {
+    background-color: #113457;
+    border-radius: 13%;
+}
+a{
+    text-decoration: none;
+}
+.searchBar {
+    margin-left: 38%;
+    display: flex;
+    align-items: center;
+}
+.searchBar__input {
+    padding-left: 1px;
+    margin-right: 1px;
+}
+.searchBar__input::placeholder {
+    color: #143F6B ;
+    font-size: 88%;
+}
+.searchBar__button {
+    color: #143F6B;
+}
+body {
+    background-color: #e8eaed;
+}
+fieldset {
+    width: fit-content;
+    margin: 1%;
+    padding: 5px;
+    border-radius: 3%;
+    border-color: grey ;
+}
+form {
+    display: flex;
+}
+h1 {
+    margin-left: 1%;
+}
+p {
+    margin: 0% 0% 1% 1%;
+    font-size: 1rem;
+}
+.titleImage {
+    grid-area: portada;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: flex-end;
+    background-image: url(../assets/Fondo\ Titulo.jpg);
+    background-position: 10%;
+    background-position-y: 24%;
+    background-size: cover;
+}
+.mainTitle {
+    display: flex;
+    color: aliceblue;
+}
+.mainContent {
+    grid-area: contenidoPrincipal;
+}
+.footer {
+    grid-area: footer;
+    font-size: 12px;
+}
+@media only screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__nav {
+        background-color: #113457;
+        width: 100%;
+        justify-content: center;
+    }
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3px;
+    }
+    .header__logo {
+        margin-left: 0px;
+    }
+    .searchBar {
+        width: 100%;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        background-color: #113457;
+        padding-bottom: 6px;
+    }
+    .header__item {
+        width: fit-content;
+        margin-left: 0%;
+    }
+    .header__item:hover {
+        background-color: #143F6B;
+        border-radius: 10%;
+    }
+    .titleImage {
+        height: 300px;
+        background-position: 50%;
+    }
+    .mainTitle {
+        font-size: 18px;
+    }
+    form {
+        justify-content: center;
+    }
+    .gridArea__contacto {
+        grid-template-rows: 0.3fr 0.5fr 0fr;
+    }
+}
+
+@media only screen and (min-width: 481px) and (max-width: 1023px) {
+    .header {
+        flex-direction: column;
+    }
+    .header__nav {
+        background-color: #113457;
+        width: 100%;
+        justify-content: center;
+    }
+    .header__list {
+        flex-direction: column;
+        align-items: center;
+        margin-top: 3px;
+    }
+    .header__logo {
+        margin-left: 0px;
+    }
+    .searchBar {
+        width: 100%;
+        margin-left: 0px;
+        align-items: center;
+        justify-content: center;
+        background-color: #113457;
+        padding-bottom: 7px;
+    }
+    .header__item {
+        width: fit-content;
+        margin-left: 0%;
+    }
+    .header__item:hover {
+        background-color: #143F6B;
+        border-radius: 10%;
+    }
+    .footer {
+        font-size: 13px;
+    }
+    form {
+        justify-content: center;
+    }
+    .gridArea__contacto {
+        grid-template-rows: 0.3fr 1fr 0fr;
+    }
+}
