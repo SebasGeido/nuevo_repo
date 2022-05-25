@@ -2,7 +2,7 @@
     padding: 0%;
     margin: 0%;
     box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;;    
+    font-family: 'Poppins', sans-serif;    
 }
 .gridArea__index {
     display: grid;
@@ -12,7 +12,7 @@
         "contenidoPrincipal"
         "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 0.3fr 2fr 2fr 0fr;
+    grid-template-rows: 0.3fr 2fr 2fr 0.1fr;
 }
 .gridArea__contacto {
     display: grid;
@@ -21,7 +21,16 @@
         "form"
         "footer";
     grid-template-columns: 100%;
-    grid-template-rows: 0.3fr 8.45fr 0fr ;
+    grid-template-rows: 0.3fr 8.45fr 0.1fr ;
+}
+.gridArea {
+    display: grid;
+    grid-template-areas: 
+        "header"
+        "section"
+        "footer";
+    grid-template-columns: 100%;
+    grid-template-rows:0.3fr auto 0.1fr;
 }
 .header {
     width: 100%;
@@ -117,6 +126,33 @@ p {
     grid-area: footer;
     font-size: 12px;
 }
+.catalogo {
+    grid-area: section;
+    display: flex;
+    justify-content: flex-start;
+    flex-wrap: wrap;
+}
+.containerArticulo {
+    display: flex;
+    width: 150px;
+    height: fit-content;
+    margin: 10px 5px 10px 5px;
+}
+.IMGcamiseta {
+  width: 150px ;
+}
+.containerArticulo p{
+    font-size: 0.9rem;
+    justify-content: center
+    ;
+}
+.catalogo h2 {
+    width: 100%;
+    margin-left: 5px;
+}
+.section {
+    grid-area: section;
+}
 @media only screen and (max-width: 480px) {
     .header {
         flex-direction: column;
@@ -163,8 +199,14 @@ p {
     .gridArea__contacto {
         grid-template-rows: 0.3fr 0.5fr 0fr;
     }
+    .catalogo {
+        justify-content: center;
+    }
+    .catalogo h2 {
+        width: 100%;
+        margin-left: 5px;    
+    }
 }
-
 @media only screen and (min-width: 481px) and (max-width: 1023px) {
     .header {
         flex-direction: column;
@@ -206,5 +248,12 @@ p {
     }
     .gridArea__contacto {
         grid-template-rows: 0.3fr 1fr 0fr;
+    }
+    .catalogo {
+        justify-content: center;
+    }
+    .catalogo h2 {
+        width: 100%;
+        margin-left: 5px;    
     }
 }
