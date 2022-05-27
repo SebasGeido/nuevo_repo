@@ -139,7 +139,11 @@ p {
     margin: 10px 5px 10px 5px;
 }
 .IMGcamiseta {
-  width: 150px ;
+    width: 150px;
+    max-width: 100%;
+}
+.IMGcamiseta:hover {
+  width: 149px;
 }
 .containerArticulo p{
     font-size: 0.9rem;
