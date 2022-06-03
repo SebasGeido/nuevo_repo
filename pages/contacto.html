@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/animista.css" />
     <link
       rel="shortcut icon"
       href="../assets/icono_bover.ico"
@@ -22,68 +29,111 @@
     <!--fila del logo y nav-->
     <div class="gridArea__contacto">
       <header class="header">
-        <img class="header__logo" src="../assets/bover.png" alt="logo" />
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__anchor" href="../index.html">Home</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./catalogo.html">Catálogo</a>
-            </li>
-            <li class="header__item">
-            <a class="header__anchor" href="./ubicacion.html">Ubicación</a>
-          </li>
-          <li class="header__item">
-            <a class="header__anchor" href="./FAQ.html">FAQ</a>
-          </li>
-          <li class="header__item">
-            <a class="header__anchor" href="./contacto.html">Contacto</a>
-          </li>
-        </ul>
-      </nav>
-      <div class="searchBar">
-        <input
-        class="searchBar__input"
-        type="search"
-        name="shirtSearch"
-        id="shirtSearch"
-        placeholder="¿Que camiseta buscas?"
-        />
-        <button class="searchBar__button">Buscar</button>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <img class="header__logo" src="../assets/bover.png" alt="logo" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="¿Que camiseta buscas?"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
+        </nav>
       </header>
-      
       <!--fin de fila del logo y nav-->
-      <section class="form">
-        <form action="" method="post">
+      <section>
+        <form>
           <fieldset>
-            <legend>Contactanos</legend>
-            <label for="name">Nombre:</label>
-            <input id="name" type="text" />
-            <br />
-            <label for="surname">Apellido:</label>
-            <input type="text" id="surname" />
-            <br />
-            <label for="eMail">Email:</label>
-            <input type="email" name="email" id="eMail" />
-            <br />
-            <label for="sex">Sexo:</label>
-            <select name="sex" id="sex">
-              <option value="" disabled selected></option>
-              <option value="M">Hombre</option>
-              <option value="W">Mujer</option>
-              <option value="O">Otro</option>
+            <legend>Contactenos</legend>
+            <div class="mb-3">
+              <label for="exampleInputText1" class="form-label">Nombre</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputText1"
+                aria-describedby="textHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputText2" class="form-label">Apellido</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleInputText2"
+                aria-describedby="textHelp"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="exampleInputEmail1" class="form-label">Email</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleInputEmail1"
+                aria-describedby="emailHelp"
+              />
+              <div id="emailHelp" class="form-text">
+                Nunca compartiremos tu email con nadie.
+              </div>
+            </div>
+            <select class="form-select" aria-label="Default select example">
+              <option selected disabled>Sexo:</option>
+              <option value="1">Hombre</option>
+              <option value="2">Mujer</option>
             </select>
-            <br />
-            <button type="submit">Enviar</button>
+            <button type="submit" class="btn btn-primary btn-submit">
+              Enviar
+            </button>
           </fieldset>
         </form>
       </section>
       <!--inicio del footer-->
       <footer class="footer">
-      <h4>Copyright © 2022 - Camisetas Bover Inc.</h4>
-      <h6>Todos los derechos reservados.</h6>
+        <h4 class="copyright-footer">
+          Copyright © 2022 - Camisetas Bover Inc.
+        </h4>
+        <h6 class="rights-footer">Todos los derechos reservados.</h6>
       </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

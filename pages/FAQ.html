@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/animista.css" />
     <link
       rel="shortcut icon"
       href="../assets/icono_bover.ico"
@@ -22,95 +29,129 @@
     <!--fila del logo y nav-->
     <div class="gridArea">
       <header class="header">
-        <img class="header__logo" src="../assets/bover.png" alt="logo" />
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__anchor" href="../index.html">Home</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./catalogo.html">Catálogo</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./ubicacion.html">Ubicación</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./FAQ.html">FAQ</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <img class="header__logo" src="../assets/bover.png" alt="logo" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="¿Que camiseta buscas?"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
         </nav>
-        <div class="searchBar">
-          <input
-            class="searchBar__input"
-            type="search"
-            name="shirtSearch"
-            id="shirtSearch"
-            placeholder="¿Que camiseta buscas?"
-          />
-          <button class="searchBar__button">Buscar</button>
-        </div>
       </header>
       <!--fin de fila del logo y nav-->
       <section class="section">
         <div class="FAQ">
-          <h1 class="FAQ__h1">¿Quienes somos?</h1>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Libero,
-            velit enim molestiae ab distinctio a quasi est soluta. Aliquid
-            necessitatibus repellendus repellat asperiores ut reiciendis sunt?
-            Quis exercitationem alias tempora? Aepe amet nemo molestiae, illo
-            incidunt libero ipsam nisi esse laboriosam, harum exercitationem
-            corrupti perspiciatis numquam tempore veniam.
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample1" role="button" aria-expanded="false" aria-controls="multiCollapseExample1">¿Quienes somos?</a>
           </p>
-        </div>
-        <div class="FAQ">
-          <h1 class="FAQ__h1">¿Metodos de pago?</h1>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample1">
+                <div class="card card-body">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore molestiae veniam eaque, doloribus ipsa, amet ea vitae corrupti accusamus harum sapiente ipsum dolor esse assumenda, perferendis vel aut iusto cumque!
+                </div>
+              </div>
+            </div>
+          </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Corrupti
-            consequatur est numquam ab cumque. Dolorum, obcaecati debitis,
-            quibusdam placeat rerum est corrupti laudantium expedita cum cumque
-            autem nisi corporis harum. Beatae distinctio quibusdam quasi ducimus
-            officia totam magnam reiciendis, voluptatibus autem labore molestias
-            repellendus nihil iure.
+            <button class="btn btn-primary" type="button" data-bs-toggle="collapse" data-bs-target="#multiCollapseExample2" aria-expanded="false" aria-controls="multiCollapseExample2">¿Metodos de pago?</button>
           </p>
-        </div>
-        <div class="FAQ">
-          <h1 class="FAQ__h1">¿Envios a domicilio?</h1>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample2">
+                <div class="card card-body">
+                  Lorem ipsum dolor sit amet consectetur adipisicing elit. Molestias dolorem aperiam quos numquam iste, praesentium, rem beatae minus ea labore hic. Ut architecto consectetur doloremque ea, officia quod tempore pariatur?
+                  Quae magni modi, nostrum illo laboriosam ipsam iusto quibusdam ducimus eos nam temporibus repellendus eaque.
+                </div>
+              </div>
+            </div>
+          </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Consequatur
-            libero eveniet voluptate eligendi culpa quam tempore molestiae saepe
-            rerum. Neque optio temporibus quas sit similique. Sit ipsa odit
-            placeat pariatur?
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample3" role="button" aria-expanded="false" aria-controls="multiCollapseExample3">¿Envios a domicilio?</a>
           </p>
-        </div>
-        <div class="FAQ">
-          <h1 class="FAQ__h1">¿Cuando obtengo mi reembolso?</h1>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample3">
+                <div class="card card-body">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore molestiae veniam eaque, doloribus ipsa, amet ea vitae corrupti accusamus harum sapiente ipsum dolor esse assumenda, perferendis vel aut iusto cumque!
+                </div>
+              </div>
+            </div>
+          </div>
           <p>
-            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ea,
-            exercitationem natus deleniti soluta dolore aliquid quas deserunt,
-            magnam cum itaque esse a ex maiores recusandae accusantium id nam
-            blanditiis? Quis.
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample4" role="button" aria-expanded="false" aria-controls="multiCollapseExample4">¿Cuando obtengo mi reembolso?</a>
           </p>
-        </div>
-        <div class="FAQ">
-          <h1 class="FAQ__h1">
-            ¿Puedo encargar una camiseta que no tiene stock?
-          </h1>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample4">
+                <div class="card card-body">
+                  Nunca. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore molestiae veniam eaque, doloribus ipsa, amet ea vitae corrupti accusamus harum sapiente ipsum dolor esse assumenda, perferendis vel aut iusto cumque!
+                </div>
+              </div>
+            </div>
+          </div>
           <p>
-            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sequi
-            similique repudiandae corrupti eos aut consectetur, quisquam et
-            necessitatibus labore voluptate ipsa. Aspernatur similique numquam
-            ducimus corporis consequuntur deleniti hic at.
+            <a class="btn btn-primary" data-bs-toggle="collapse" href="#multiCollapseExample5" role="button" aria-expanded="false" aria-controls="multiCollapseExample5">¿Puedo encargar una camiseta que no tiene stock?</a>
           </p>
-        </div>
+          <div class="row">
+            <div class="col">
+              <div class="collapse multi-collapse" id="multiCollapseExample5">
+                <div class="card card-body">
+                  Lorem ipsum, dolor sit amet consectetur adipisicing elit. Dolore molestiae veniam eaque, doloribus ipsa, amet ea vitae corrupti accusamus harum sapiente ipsum dolor esse assumenda, perferendis vel aut iusto cumque!
+                </div>
+              </div>
+            </div>
+          </div>
       </section>
       <footer class="footer">
-        <h4>Copyright © 2022 - Camisetas Bover Inc.</h4>
-        <h6>Todos los derechos reservados.</h6>
+        <h4 class="copyright-footer">
+          Copyright © 2022 - Camisetas Bover Inc.
+        </h4>
+        <h6 class="rights-footer">Todos los derechos reservados.</h6>
       </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>

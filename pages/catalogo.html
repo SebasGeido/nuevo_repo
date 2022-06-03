@@ -4,7 +4,14 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-0evHe/X+R7YkIZDRvuzKMRqM+OrBnVFBL6DOitfPri4tjfHxaWutUpFmBp4vmVor"
+      crossorigin="anonymous"
+    />
     <link rel="stylesheet" href="../styles/index.css" />
+    <link rel="stylesheet" href="../styles/animista.css" />
     <link
       rel="shortcut icon"
       href="../assets/icono_bover.ico"
@@ -19,43 +26,59 @@
     <title>Camisetas Bover</title>
   </head>
   <body>
+    <!--fila del logo y nav-->
     <div class="gridArea">
-      <!--fila del logo y nav-->
       <header class="header">
-        <img class="header__logo" src="../assets/bover.png" alt="logo" />
-        <nav class="header__nav">
-          <ul class="header__list">
-            <li class="header__item">
-              <a class="header__anchor" href="../index.html">Home</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./catalogo.html">Catálogo</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./ubicacion.html">Ubicación</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./FAQ.html">FAQ</a>
-            </li>
-            <li class="header__item">
-              <a class="header__anchor" href="./contacto.html">Contacto</a>
-            </li>
-          </ul>
+        <nav class="navbar navbar-expand-lg">
+          <div class="container-fluid">
+            <img class="header__logo" src="../assets/bover.png" alt="logo" />
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                <li class="nav-item">
+                  <a class="nav-link" href="../index.html">Home</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="catalogo.html">Catálogo</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="ubicacion.html">Ubicación</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="FAQ.html">FAQ</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="contacto.html">Contacto</a>
+                </li>
+              </ul>
+              <form class="d-flex" role="search">
+                <input
+                  class="form-control me-2"
+                  type="search"
+                  placeholder="¿Que camiseta buscas?"
+                  aria-label="Search"
+                />
+                <button class="btn btn-outline-success" type="submit">
+                  Buscar
+                </button>
+              </form>
+            </div>
+          </div>
         </nav>
-        <div class="searchBar">
-          <input
-            class="searchBar__input"
-            type="search"
-            name="shirtSearch"
-            id="shirtSearch"
-            placeholder="¿Que camiseta buscas?"
-          />
-          <button class="searchBar__button">Buscar</button>
-        </div>
       </header>
       <!--fin de fila del logo y nav-->
       <section class="catalogo">
-        <h2>Productos Destacados</h2>
+        <h1>Productos Destacados</h1>
         <div class="containerArticulo">
           <a href="">
             <img
@@ -136,7 +159,7 @@
             <p>Camiseta Suplente River Plate 2022<br /><b>$12.000</b></p>
           </a>
         </div>
-        <h2>Ofertas especiales</h2>
+        <h1>Ofertas especiales</h1>
         <div class="containerArticulo">
           <a href="">
             <img
@@ -220,9 +243,33 @@
       </section>
       <!--inicio del footer-->
       <footer class="footer">
-        <h4>Copyright © 2022 - Camisetas Bover Inc.</h4>
-        <h6>Todos los derechos reservados.</h6>
+        <nav aria-label="...">
+          <ul class="pagination">
+            <li class="page-item disabled">
+              <a class="page-link">Previous</a>
+            </li>
+            <li class="page-item active" aria-current="page">
+              <a class="page-link" href="#">1</a>
+            </li>
+            <li class="page-item">
+              <a class="page-link" href="#">2</a>
+            </li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item">
+              <a class="page-link" href="#">Next</a>
+            </li>
+          </ul>
+        </nav>
+        <h4 class="copyright-footer">
+          Copyright © 2022 - Camisetas Bover Inc.
+        </h4>
+        <h6 class="rights-footer">Todos los derechos reservados.</h6>
       </footer>
     </div>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0-beta1/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
+      crossorigin="anonymous"
+    ></script>
   </body>
 </html>
