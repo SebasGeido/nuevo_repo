@@ -1,3 +1,4 @@
+@import "./partials/colors";
 *{
     padding: 0%;
     margin: 0%;
@@ -35,7 +36,7 @@
 .header {
     display: flex;
     align-items: center;
-    background-color: #143F6B;
+    background-color: $myBlue1;
     .container-fluid {
         width: 100%;
     }
@@ -59,15 +60,15 @@
         padding: 3%;
     }
     .nav-link {
-        color: #f55349;
+        color: $myRed;
         width: fit-content;
         padding: 0px;
     }
     .nav-link:hover {
-        color: #e8eaed;
+        color: $myGrey;
     }
     .nav-item:hover {
-        background-color: #113457;
+        background-color: $myBlue2;
         border-radius: 13%;
     }
 }
@@ -75,22 +76,22 @@ a{
     text-decoration: none;
 }
 .btn-outline-success {
-    --bs-btn-color: #f55349;
-    --bs-btn-border-color: #f55349;
+    --bs-btn-color: $myRed;
+    --bs-btn-border-color: $myRed;
     --bs-btn-hover-color: #fff;
-    --bs-btn-hover-bg: #f55349;
-    --bs-btn-hover-border-color: #F55353;
+    --bs-btn-hover-bg: $myRed;
+    --bs-btn-hover-border-color: $myRed;
     --bs-btn-focus-shadow-rgb: 25,135,84;
     --bs-btn-active-color: #fff;
-    --bs-btn-active-bg: #F55353;
-    --bs-btn-active-border-color: #113457;
+    --bs-btn-active-bg: $myRed;
+    --bs-btn-active-border-color: $myBlue2;
     --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
-    --bs-btn-disabled-color: #113457;
+    --bs-btn-disabled-color: $myBlue2;
     --bs-btn-disabled-bg: transparent;
     --bs-gradient: none;
 }
 body {
-    background-color: #e8eaed;
+    background-color: $myGrey;
 }
 fieldset {
     width: fit-content;
@@ -213,11 +214,11 @@ input::placeholder {
     }
     .btn-primary {
         background-color: white;
-        border-color: #113457;
+        border-color: $myBlue2;
         color: black;
         font-weight: 650;
         &:hover {
-            background-color: whitesmoke;
+            background-color: $myGrey;
         }
     }
     .card {
@@ -226,7 +227,7 @@ input::placeholder {
     .btn-submit {
         width: fit-content;
         height: fit-content;
-        background-color: #143F6B;
+        background-color: $myBlue1;
     }
 }
 @media only screen and (max-width: 480px) {
@@ -238,7 +239,7 @@ input::placeholder {
         .nav-item {
             margin-left: 0%;
             &:hover {
-                background-color: #143F6B;
+                background-color: $myBlue1;
             }
         }
         .carousel-inner {
@@ -269,7 +270,7 @@ input::placeholder {
     .header {
         flex-direction: column;
         &__nav {
-            background-color: #113457;
+            background-color: $myBlue1;
             width: 100%;
             justify-content: center;
         }
@@ -280,7 +281,7 @@ input::placeholder {
             padding: 0%;
             margin-left: 0%;
             &:hover {
-                background-color: #143F6B;
+                background-color: $myBlue1;
                 border-radius: 10%;
             }
         }
