@@ -1,0 +1,60 @@
+.header {
+    display: flex;
+    align-items: center;
+    background-color: $myBlue1;
+    .container-fluid {
+        @include sizes(100%,auto);
+    }
+    .navbar {
+        max-height: 100%;
+         @include sizes(100%,auto);
+        display: flex;
+        align-items: flex-start;
+    }
+    &__logo {
+        justify-content: center;
+        display: flex;
+        @include sizes(auto,70px);
+        margin-left: map-get($estilosSTD, StdPX );
+        margin-bottom: 2px;
+    }
+    .nav{
+        &-item {
+            margin-left: 9%;
+            font-size: 14px;
+            list-style: none;
+            padding: 3%;
+            &:hover {
+                background-color: $myBlue2;
+                border-radius: 13%;
+            }
+        }
+        &-link {
+            color: $myRed;
+            width: fit-content;
+            padding: 0px;
+            &:hover {
+                color: $myGrey;
+            }
+        }
+    }
+    .btn-outline-success {
+        --bs-btn-color: $myRed;
+        border-color: $myRed;
+        color: $myRed;
+        --bs-btn-hover-color: #fff;
+        --bs-btn-hover-bg: $myRed;
+        --bs-btn-hover-border-color: $myRed;
+        --bs-btn-focus-shadow-rgb: 25,135,84;
+        --bs-btn-active-color: #fff;
+        --bs-btn-active-bg: $myRed;
+        --bs-btn-active-border-color: $myBlue2;
+        --bs-btn-active-shadow: inset 0 3px 5px rgba(0, 0, 0, 0.125);
+        --bs-btn-disabled-color: $myBlue2;
+        --bs-btn-disabled-bg: transparent;
+        --bs-gradient: none;
+    }
+    input::placeholder {
+        font-size: 90%;
+    }
+}

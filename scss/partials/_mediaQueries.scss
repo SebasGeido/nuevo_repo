@@ -1,0 +1,94 @@
+@media only screen and (max-width: 480px) {
+    .header {
+        flex-direction: column;
+        &__logo {
+            margin-left: 0px;
+        }
+        .nav-item {
+            margin-left: 0%;
+            &:hover {
+                background-color: $myBlue1;
+            }
+        }
+        .carousel-inner {
+            @include sizes(auto,300px);
+        }
+    }   
+    .mainTitle {
+        font-size: 18px;
+    }
+    form {
+        justify-content: center;
+    }
+    .gridArea__contacto {
+        grid-template-rows: 0.3fr 0.5fr 0fr;
+    }
+    .catalogo {
+        justify-content: center;
+        .IMGcamiseta {
+            @include sizes(150px, auto)
+        }
+        .containerArticulo {
+            @include sizes(150px, auto)
+        }
+        h2 {
+            @include sizes(100%,auto);    
+        }
+    }
+    h1 {
+        font-size: 2rem;
+    }
+    fieldset {
+        width: 70%;
+    }
+    .footer {
+        flex-wrap: nowrap;
+        font-size: 30px;
+        &__copyright {
+            font-size: 8px;;
+        }
+    }
+}
+@media only screen and (min-width: 481px) and (max-width: 991px) {
+    .header {
+        flex-direction: column;
+        &__nav {
+            background-color: $myBlue1;
+            @include sizes(100%,auto);
+            justify-content: center;
+        }
+        &__logo {
+            margin-left: 0px;
+        }
+        .nav-item {
+            padding: 0%;
+            margin-left: 0%;
+            &:hover {
+                background-color: $myBlue1;
+                border-radius: 10%;
+            }
+        }
+        .nav-link {
+            margin: map-get($estilosSTD, StdPX );
+        }
+    }
+    .footer {
+        font-size: 13px;
+    }
+    form {
+        justify-content: center;
+    }
+    .gridArea__contacto {
+        grid-template-rows: 0.3fr 1fr 0fr;
+    }
+    .catalogo {
+        justify-content: center;
+        h2 {
+            @include sizes(100%,auto);
+            margin-left: map-get($estilosSTD, StdPX );    
+        }
+    }
+    fieldset {
+        @include sizes(70%,auto);
+    }
+}

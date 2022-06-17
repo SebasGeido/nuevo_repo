@@ -1,0 +1,34 @@
+.gridArea {
+    display: grid;
+    grid-template-areas: 
+    "header"
+    "section"
+    "footer";
+    grid-template-columns: 100%;
+    grid-template-rows:0.3fr auto 0.1fr;
+    &__contacto {
+        display: grid;
+        grid-template-areas:
+        "header"
+        "form"
+            "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: 0.3fr auto 0.1fr ;
+        }
+        &__index {
+            display: grid;
+            grid-template-areas: 
+                "header"
+                "portada"
+                "contenidoPrincipal"
+                "footer";
+            grid-template-columns: 100%;
+            grid-template-rows: 2fr auto 0.1fr;
+        }
+    }
+.section {
+    grid-area: section;
+}
+.mainContent {
+    grid-area: contenidoPrincipal;
+}

@@ -1,0 +1,16 @@
+.footer {
+    grid-area: footer;
+    display: flex;
+    justify-content: center;
+    background-color: $myBlue1;
+    position: fixed;
+    bottom: 0;
+    @include sizes(100%,auto);
+    color: $myRed;
+    &__copyright {
+        margin: 0;
+        font-size: 12px;
+        font-weight: bold;
+        padding-right: map-get($estilosSTD, StdPX );
+    }
+}

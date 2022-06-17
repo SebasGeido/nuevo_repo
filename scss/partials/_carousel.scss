@@ -1,0 +1,36 @@
+.carousel {
+    grid-area: portada;
+    &-inner {
+        @include sizes(100%,400px)
+    }
+    &-item {
+        @include sizes(100%,100%);
+    }
+    %image {
+        @include sizes(100%,100%);
+        display: flex;
+        align-items: flex-end;
+        background-position-x: 39%;
+        background-size: cover;
+    }
+    .titleImage {
+        @extend %image;
+        background-image: url('../assets/Fondo\ Titulo.jpg');
+        background-position-y: 20%;
+    }
+    .titleImage-2 {
+        @extend %image;
+        background-image: url('../assets/Fondo\ Titulo\ 2.jpg');
+        background-position-y: 14%;
+    }
+    .titleImage-3 {
+        @extend %image;
+        background-image: url('../assets/Fondo\ Titulo\ 3.jpg');
+        background-position-y: 5%;
+    }
+    .mainTitle {
+        display: flex;
+        color: aliceblue;
+        background-color: rgba(0,0,0,0.5);
+    }
+}

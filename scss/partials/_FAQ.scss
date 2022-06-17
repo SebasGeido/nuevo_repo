@@ -1,0 +1,25 @@
+.FAQ{
+    p {
+        margin: 1%;
+    }
+    .btn-primary {
+        background-color: rgb(255, 255, 255);
+        border-color: $myBlue2;
+        color: black;
+        font-weight: 650;
+        display: flex;
+        justify-content: center;
+        &:hover {
+            background-color: $myGrey;
+        }
+    }
+    .card {
+        margin: 7px;
+        display: flex;
+    }
+    .btn-submit {
+        width: fit-content;
+        height: fit-content;
+        background-color: $myBlue1;
+    }
+}

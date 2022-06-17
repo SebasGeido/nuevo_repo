@@ -1,0 +1,29 @@
+.catalogo {
+    grid-area: section;
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin: 0px 5px 0px 5px;
+    h1 {
+        @include sizes(100%,auto);
+        margin-left: map-get($estilosSTD, StdPX );
+    }
+    .containerArticulo {
+        display: flex;
+        @include sizes(175px,auto);
+        height: fit-content;
+        margin: 10px 5px 10px 5px;
+        p{
+            font-size: 0.9rem;
+            justify-content: center
+            ;
+        }
+        .IMGcamiseta {
+            @include sizes(175px,auto);
+            max-width: 100%;
+            &:hover {
+                @include sizes(173.5px,auto);
+            }
+        }
+    }
+}

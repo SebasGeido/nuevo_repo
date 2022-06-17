@@ -1,0 +1,35 @@
+*{
+    padding: 0%;
+    margin: 0%;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;    
+}
+a{
+    text-decoration: none;
+}
+body {
+    background-color: $myGrey;
+}
+fieldset {
+    @include sizes(50%,auto);
+    margin: 1%;
+    padding: map-get($estilosSTD, StdPX);
+    border-radius: 3%; ;
+}
+form {
+    display: flex;
+    justify-content: center;
+    .form-select {
+        margin-bottom: 10px;
+    }
+}
+h1 {
+    margin-left: 7px;
+    margin-bottom: 0px;
+    font-size: 1.7rem ;
+    font-weight: bold;
+}
+p {
+    margin: 0% 0% 1% 1%;
+    font-size: 1rem;
+}
