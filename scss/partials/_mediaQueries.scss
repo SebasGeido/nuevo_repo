@@ -36,7 +36,7 @@
         }
     }
     h1 {
-        font-size: 2rem;
+        font-size: 1.8rem;
     }
     fieldset {
         width: 70%;
@@ -46,6 +46,16 @@
         font-size: 30px;
         &__copyright {
             font-size: 8px;;
+        }
+    }
+    .Title {
+        display: flex;
+        justify-content: center;
+    }
+    .location {
+        flex-direction: column;
+        p {
+            max-width: 100%;
         }
     }
 }
@@ -90,5 +100,11 @@
     }
     fieldset {
         @include sizes(70%,auto);
+    }
+    .location {
+        flex-direction: column;
+        p {
+            max-width: 100%;
+        }
     }
 }
