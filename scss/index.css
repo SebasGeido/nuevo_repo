@@ -9,11 +9,13 @@
 }
 
 .header .container-fluid {
+  height: auto;
   width: 100%;
 }
 
 .header .navbar {
   max-height: 100%;
+  height: auto;
   width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -31,6 +33,7 @@
   display: -ms-flexbox;
   display: flex;
   height: 70px;
+  width: auto;
   margin-left: 5px;
   margin-bottom: 2px;
 }
@@ -109,6 +112,7 @@ body {
 }
 
 fieldset {
+  height: auto;
   width: 50%;
   margin: 1%;
   padding: 5px;
@@ -129,14 +133,16 @@ form .form-select {
 }
 
 h1 {
-  margin-left: 7px;
-  margin-bottom: 0px;
   font-size: 1.7rem;
   font-weight: bold;
+  margin-bottom: 2px;
+  margin-top: 2px;
+  text-align: center;
 }
 
 p {
-  margin: 0% 0% 1% 1%;
+  margin: 5px;
+  margin-left: 10px;
   font-size: 1rem;
 }
 
@@ -148,14 +154,17 @@ p {
 
 .carousel-inner {
   height: 400px;
+  width: 100%;
 }
 
 .carousel-item {
   height: 100%;
+  width: 100%;
 }
 
 .carousel .titleImage, .carousel .titleImage-2, .carousel .titleImage-3 {
   height: 100%;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -205,6 +214,7 @@ p {
 }
 
 .catalogo h1 {
+  height: auto;
   width: 100%;
   margin-left: 5px;
 }
@@ -213,6 +223,7 @@ p {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
+  height: auto;
   width: 175px;
   height: -webkit-fit-content;
   height: -moz-fit-content;
@@ -228,16 +239,18 @@ p {
 }
 
 .catalogo .containerArticulo .IMGcamiseta {
+  height: auto;
   width: 175px;
   max-width: 100%;
 }
 
 .catalogo .containerArticulo .IMGcamiseta:hover {
-  width: 173px;
+  height: auto;
+  width: 173.5px;
 }
 
 .FAQ p {
-  margin: 1%;
+  margin: 0.6%;
 }
 
 .FAQ .btn-primary {
@@ -259,6 +272,9 @@ p {
 
 .FAQ .card {
   margin: 7px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 .FAQ .btn-submit {
@@ -269,6 +285,19 @@ p {
   height: -moz-fit-content;
   height: fit-content;
   background-color: #143F6B;
+}
+
+.location {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.location p {
+  max-width: 620px;
 }
 
 .footer {
@@ -284,6 +313,7 @@ p {
   background-color: #143F6B;
   position: fixed;
   bottom: 0;
+  height: auto;
   width: 100%;
   color: #f55349;
 }
@@ -355,6 +385,7 @@ p {
   }
   .header .carousel-inner {
     height: 300px;
+    width: auto;
   }
   .mainTitle {
     font-size: 18px;
@@ -373,11 +404,20 @@ p {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  .catalogo .IMGcamiseta {
+    height: auto;
+    width: 150px;
+  }
+  .catalogo .containerArticulo {
+    height: auto;
+    width: 150px;
+  }
   .catalogo h2 {
+    height: auto;
     width: 100%;
   }
   h1 {
-    font-size: 2rem;
+    font-size: 1.8rem;
   }
   fieldset {
     width: 70%;
@@ -390,11 +430,22 @@ p {
   .footer__copyright {
     font-size: 8px;
   }
-  .containerArticulo {
-    width: 150px;
+  .Title {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
   }
-  .IMGcamiseta {
-    width: 150px;
+  .location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .location p {
+    max-width: 100%;
   }
 }
 
@@ -407,6 +458,7 @@ p {
   }
   .header__nav {
     background-color: #143F6B;
+    height: auto;
     width: 100%;
     -webkit-box-pack: center;
         -ms-flex-pack: center;
@@ -424,7 +476,7 @@ p {
     border-radius: 10%;
   }
   .header .nav-link {
-    margin: 7px;
+    margin: 5px;
   }
   .footer {
     font-size: 13px;
@@ -444,11 +496,22 @@ p {
             justify-content: center;
   }
   .catalogo h2 {
+    height: auto;
     width: 100%;
     margin-left: 5px;
   }
   fieldset {
+    height: auto;
     width: 70%;
+  }
+  .location {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .location p {
+    max-width: 100%;
   }
 }
 /*# sourceMappingURL=index.css.map */
