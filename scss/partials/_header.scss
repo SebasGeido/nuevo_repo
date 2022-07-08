@@ -24,19 +24,23 @@
             font-size: 14px;
             list-style: none;
             padding: 3%;
+            border-radius: 11%;
             &:hover {
                 background-color: $myBlue2;
-                border-radius: 13%;
+                color: $myGrey;
             }
         }
         &-link {
-            color: $myRed;
+            color: #fff;
             width: fit-content;
             padding: 0px;
             &:hover {
                 color: $myGrey;
             }
         }
+    }
+    .navbar-toggler {
+        background-color: $myGrey;
     }
     .btn-outline-success {
         --bs-btn-color: $myRed;

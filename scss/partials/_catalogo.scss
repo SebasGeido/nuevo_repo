@@ -3,7 +3,7 @@
     display: flex;
     justify-content: center;
     flex-wrap: wrap;
-    margin: 0px 5px 0px 5px;
+    padding: 1rem;
     h1 {
         @include sizes(100%,auto);
         margin-left: map-get($estilosSTD, StdPX );

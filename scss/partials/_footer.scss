@@ -5,8 +5,9 @@
     background-color: $myBlue1;
     position: fixed;
     bottom: 0;
+    color: #fff;
+    padding: 0.6rem;
     @include sizes(100%,auto);
-    color: $myRed;
     &__copyright {
         margin: 0;
         font-size: 12px;

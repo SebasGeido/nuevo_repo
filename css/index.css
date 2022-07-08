@@ -22,16 +22,19 @@
     margin-left: 9%;
     font-size: 14px;
     list-style: none;
-    padding: 3%; }
+    padding: 3%;
+    border-radius: 11%; }
     .header .nav-item:hover {
       background-color: #113457;
-      border-radius: 13%; }
+      color: #eceff0; }
   .header .nav-link {
-    color: #f55349;
+    color: #fff;
     width: fit-content;
     padding: 0px; }
     .header .nav-link:hover {
-      color: #e8eaed; }
+      color: #eceff0; }
+  .header .navbar-toggler {
+    background-color: #eceff0; }
   .header .btn-outline-success {
     --bs-btn-color: $myRed;
     border-color: #f55349;
@@ -60,7 +63,7 @@ a {
   text-decoration: none; }
 
 body {
-  background-color: #e8eaed; }
+  background-color: #eceff0; }
 
 fieldset {
   height: auto;
@@ -85,7 +88,8 @@ h1 {
 p {
   margin: 5px;
   margin-left: 10px;
-  font-size: 1rem; }
+  font-size: 1rem;
+  font-weight: 600; }
 
 .carousel {
   grid-area: portada; }
@@ -121,7 +125,7 @@ p {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  margin: 0px 5px 0px 5px; }
+  padding: 1rem; }
   .catalogo h1 {
     height: auto;
     width: 100%;
@@ -143,31 +147,32 @@ p {
         height: auto;
         width: 173.5px; }
 
-.FAQ p {
-  margin: 0.6%; }
-
-.FAQ .btn-primary {
-  background-color: white;
-  border-color: #113457;
-  color: black;
+.FAQ {
   font-weight: 650;
-  display: flex;
-  justify-content: center; }
-  .FAQ .btn-primary:hover {
-    background-color: #e8eaed; }
-
-.FAQ .card {
-  margin: 7px;
-  display: flex; }
-
-.FAQ .btn-submit {
-  width: fit-content;
-  height: fit-content;
-  background-color: #143F6B; }
+  padding: 1rem 2rem 2rem 2rem; }
+  .FAQ p {
+    margin: 0.6%; }
+  .FAQ .btn-primary {
+    background-color: white;
+    border-color: #113457;
+    color: black;
+    font-weight: 650;
+    display: flex;
+    justify-content: center; }
+    .FAQ .btn-primary:hover {
+      background-color: #eceff0; }
+  .FAQ .card {
+    margin: 7px;
+    display: flex; }
+  .FAQ .btn-submit {
+    width: fit-content;
+    height: fit-content;
+    background-color: #143F6B; }
 
 .location {
   display: flex;
-  justify-content: center; }
+  justify-content: center;
+  padding: 1rem; }
   .location p {
     max-width: 620px; }
 
@@ -178,9 +183,10 @@ p {
   background-color: #143F6B;
   position: fixed;
   bottom: 0;
+  color: #fff;
+  padding: 0.6rem;
   height: auto;
-  width: 100%;
-  color: #f55349; }
+  width: 100%; }
   .footer__copyright {
     margin: 0;
     font-size: 12px;
@@ -204,7 +210,8 @@ p {
     grid-template-rows: 2fr auto 0.1fr; }
 
 .section {
-  grid-area: section; }
+  grid-area: section;
+  padding: 1rem; }
 
 .mainContent {
   grid-area: contenidoPrincipal; }
