@@ -7,21 +7,21 @@ class Camiseta {
     }
 }
 const camisetas = [];
-camisetas.push(new Camiseta(`BocaTit22`,10000,true))
-camisetas.push(new Camiseta("BocaSup22",12000,false))
-camisetas.push(new Camiseta("BocaAlt22",12000,false))
-camisetas.push(new Camiseta("RivTit22",10000,true))
-camisetas.push(new Camiseta("RivSup22",12000,false))  
-camisetas.push(new Camiseta("RivArq22",14000,false))
-camisetas.push(new Camiseta("RivAlt22",15000,false))
+camisetas.push(new Camiseta(`BocaTit22`, 10000, true))
+camisetas.push(new Camiseta("BocaSup22", 12000, false))
+camisetas.push(new Camiseta("BocaAlt22", 12000, false))
+camisetas.push(new Camiseta("RivTit22", 10000, true))
+camisetas.push(new Camiseta("RivSup22", 12000, false))
+camisetas.push(new Camiseta("RivArq22", 14000, false))
+camisetas.push(new Camiseta("RivAlt22", 15000, false))
 function contarSeleccionados(_seleccionados) {
     if (_seleccionados == true)
         this.itemsSeleccionados = itemsSeleccionados + 1
 }
-function contarItems () {
+function contarItems() {
     if (this.itemsSeleccionados === 0)
         console.log(`Su carrito esta vacío`)
-    else{
+    else {
         console.log(`Tiene ${this.itemsSeleccionados} articulos seleccionados`)
     }
 }
@@ -46,9 +46,11 @@ let camisetasConIva = camisetas.map((el) => {
 camisetasConIva.sort((a, b) => {
     if (a.precio > b.precio) {
         return 1;
-    }  
+    }
     if (a.precio < b.precio) {
         return -1;
-    }  
+    }
 })
 console.log(camisetasConIva)
+let titulo1 = document.getElementById("mainTitle")
+titulo1.innerHTML = prompt("Ingrese un titulo")
