@@ -58,6 +58,9 @@
             max-width: 100%;
         }
     }
+    .btn-dark {
+        margin-bottom: 3%;
+    }
 }
 @media only screen and (min-width: 481px) and (max-width: 991px) {
     .header {
@@ -106,5 +109,8 @@
         p {
             max-width: 100%;
         }
+    }
+    .btn-dark {
+        margin-bottom: 3%;
     }
 }

@@ -1,4 +1,5 @@
 itemsSeleccionados = 0
+
 class Camiseta {
     constructor(nombre, precio, seleccionado) {
         this.nombre = nombre
@@ -52,5 +53,20 @@ camisetasConIva.sort((a, b) => {
     }
 })
 console.log(camisetasConIva)
-let titulo1 = document.getElementById("mainTitle")
-titulo1.innerHTML = prompt("Ingrese un titulo")
+
+/* let titulo1 = document.getElementById("mainTitle");
+titulo1.innerHTML = prompt("Ingrese un titulo"); */
+
+function darkMode() {
+    let el = document.body;
+    el.classList.toggle(`darkMode`)
+}
+let darkBtn = document.getElementById(`darkMode`);
+darkBtn.addEventListener(`click`,darkMode);
+
+resultadoBusqueda = () => {alert(`¡Lo sentimos! La camiseta que buscabas no existe.`)}
+
+let srchBtn = document.getElementById(`srchBtn`);
+srchBtn.addEventListener(`click`,resultadoBusqueda)
+
+

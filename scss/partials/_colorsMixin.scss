@@ -2,6 +2,10 @@ $myBlue1: #143F6B;
 $myBlue2: #113457;
 $myRed: #f55349;
 $myGrey: #eceff0;
+.darkMode {
+    background-color: rgb(30, 29, 29);
+    color: $myGrey;
+}
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;

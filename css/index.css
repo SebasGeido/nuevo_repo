@@ -1,3 +1,7 @@
+.darkMode {
+  background-color: #1e1d1d;
+  color: #eceff0; }
+
 .header {
   display: flex;
   align-items: center;
@@ -90,6 +94,9 @@ p {
   margin-left: 10px;
   font-size: 1rem;
   font-weight: 600; }
+
+.btn-dark {
+  margin-right: 3%; }
 
 .carousel {
   grid-area: portada; }
@@ -260,7 +267,9 @@ p {
   .location {
     flex-direction: column; }
     .location p {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .btn-dark {
+    margin-bottom: 3%; } }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
   .header {
@@ -298,4 +307,6 @@ p {
   .location {
     flex-direction: column; }
     .location p {
-      max-width: 100%; } }
+      max-width: 100%; }
+  .btn-dark {
+    margin-bottom: 3%; } }

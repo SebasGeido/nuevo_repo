@@ -36,7 +36,9 @@
       <header class="header">
         <nav class="navbar navbar-expand-lg swing-in-top-fwd">
           <div class="container-fluid">
-            <img class="header__logo" src="../assets/bover.png" alt="logo" />
+            <a class="nav-link" href="../index.html">
+              <img class="header__logo" src="../assets/bover.png" alt="logo" />
+            </a>
             <button
               class="navbar-toggler"
               type="button"
@@ -66,6 +68,9 @@
                   <a class="nav-link" href="contacto.html">Contacto</a>
                 </li>
               </ul>
+              <button type="button" class="btn btn-dark" id="darkMode">
+                Modo Oscuro
+              </button>
               <form class="d-flex" role="search">
                 <input
                   class="form-control me-2"
@@ -83,7 +88,7 @@
       </header>
       <!--fin de fila del logo y nav-->
       <section>
-        <form>
+        <form id="formulario">
           <fieldset>
             <legend>Contactenos</legend>
             <div class="mb-3">
@@ -140,5 +145,6 @@
       integrity="sha384-pprn3073KE6tl6bjs2QrFaJGz5/SUsLqktiwsUTF55Jfv3qYSDhgCecCxMW52nD2"
       crossorigin="anonymous"
     ></script>
+    <script src="../js/main.js"></script>
   </body>
 </html>
