@@ -44,6 +44,8 @@ let camisetasConIva = camisetas.map((el) => {
         seleccionado: el.seleccionado
     }
 })
+/* let titulo1 = document.getElementById("mainTitle");
+titulo1.innerHTML = ; */
 camisetasConIva.sort((a, b) => {
     if (a.precio > b.precio) {
         return 1;
@@ -54,19 +56,18 @@ camisetasConIva.sort((a, b) => {
 })
 console.log(camisetasConIva)
 
-/* let titulo1 = document.getElementById("mainTitle");
-titulo1.innerHTML = prompt("Ingrese un titulo"); */
-
 function darkMode() {
     let el = document.body;
     el.classList.toggle(`darkMode`)
+    localStorage.setItem(`color`, `black`)
 }
-let darkBtn = document.getElementById(`darkMode`);
-darkBtn.addEventListener(`click`,darkMode);
+function lightMode() {
+    let el = document.body;
+    el.classList.toggle(`darkMode`)
+    localStorage.clear()
+}
+let bodyColor = localStorage.getItem(`color`)
 
-resultadoBusqueda = () => {alert(`¡Lo sentimos! La camiseta que buscabas no existe.`)}
-
-let srchBtn = document.getElementById(`srchBtn`);
-srchBtn.addEventListener(`click`,resultadoBusqueda)
-
-
+if (bodyColor == `black`) {
+    darkMode()
+}

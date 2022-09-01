@@ -6,6 +6,10 @@ $myGrey: #eceff0;
     background-color: rgb(30, 29, 29);
     color: $myGrey;
 }
+.lightMode {
+    background-color: $myGrey;
+    color: black;
+}
 @mixin sizes($width, $height) {
     height: $height;
     width: $width;

@@ -2,6 +2,10 @@
   background-color: #1e1d1d;
   color: #eceff0; }
 
+.lightMode {
+  background-color: #eceff0;
+  color: black; }
+
 .header {
   display: flex;
   align-items: center;
@@ -96,7 +100,10 @@ p {
   font-weight: 600; }
 
 .btn-dark {
-  margin-right: 3%; }
+  margin-right: 2%; }
+
+.btn-light {
+  margin-right: 1%; }
 
 .carousel {
   grid-area: portada; }
@@ -269,6 +276,8 @@ p {
     .location p {
       max-width: 100%; }
   .btn-dark {
+    margin-bottom: 3%; }
+  .btn-light {
     margin-bottom: 3%; } }
 
 @media only screen and (min-width: 481px) and (max-width: 991px) {
@@ -309,4 +318,6 @@ p {
     .location p {
       max-width: 100%; }
   .btn-dark {
+    margin-bottom: 3%; }
+  .btn-light {
     margin-bottom: 3%; } }
