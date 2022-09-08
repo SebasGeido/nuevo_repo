@@ -1,5 +1,32 @@
 itemsSeleccionados = 0
-
+let avisoContacto = localStorage.getItem(`avisoContacto`)
+if(avisoContacto != `true`) {
+    setTimeout(()=> {
+        Swal.fire({
+            icon: 'question',
+            title: 'Hey!',
+            text: '¿Tienes alguna duda o consulta? No dudes en contactarte con nosotros',
+            footer: '<a href="./pages/contacto.html">Ir a pagina de Contacto</a>',
+            color: `Black`,
+          })
+          localStorage.setItem(`avisoContacto`, `true`)
+    },15000)
+}
+function sinCamiseta () {
+    Swal.fire({
+        title: '¡Lo sentimos! La camiseta que seleccionaste no esta disponible. Seleccione otra.',
+        width: 600,
+        padding: '3em',
+        color: '#143F6B',
+        background: `url(https://i.pinimg.com/736x/80/05/36/800536363d097be1244d85726d754f39.jpg)`,
+        backdrop: `
+          rgba(0,0,123,0.4)
+          url("/images/nyan-cat.gif")
+          left top
+          no-repeat
+        `
+    })
+}
 class Camiseta {
     constructor(nombre, precio, seleccionado) {
         this.nombre = nombre
