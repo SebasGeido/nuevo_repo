@@ -1,0 +1,8 @@
+[{"Nombre": "Camiseta Titular Boca Juniors 2022", "Precio": 10000, "Seleccionada": true, "link": "assets/camiseta boca 1.png"},
+{"Nombre": "Camiseta Suplente Boca Juniors 2022", "Precio":12000 , "Seleccionado": false, "link": "assets/camiseta boca 3.png"},
+{"Nombre": "Camiseta Training Boca Juniors 2022" , "Precio": 12000, "Seleccionado": false, "link": "assets/Camiseta boca entrenamiento.png"},
+{"Nombre": "Camiseta Titular River Plate 2022", "Precio": 10000, "Seleccionado": true, "link": "assets/camiseta river 1.png"},
+{"Nombre": "Camiseta Suplente River Plate 2022", "Precio": 12000, "Seleccionado": true, "link": "assets/camiseta river 2.png"},
+{"Nombre": "Camiseta Arquero River Plate 2022" , "Precio": 14000, "Seleccionado": false, "link": "assets/Camiseta river arquero 2.png"},
+{"Nombre": "Camiseta Alternativa River Plate 2022" , "Precio": 15000, "Seleccionado": false, "link": "assets/camiseta river 3.png"}
+]
