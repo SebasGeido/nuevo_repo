@@ -1,6 +1,8 @@
 .darkMode {
   background-color: #1e1d1d;
   color: #eceff0; }
+  .darkMode a {
+    color: #eceff0; }
 
 .lightMode {
   background-color: #eceff0;
@@ -68,7 +70,8 @@
   font-family: 'Poppins', sans-serif; }
 
 a {
-  text-decoration: none; }
+  text-decoration: none;
+  color: black; }
 
 body {
   background-color: #eceff0; }
